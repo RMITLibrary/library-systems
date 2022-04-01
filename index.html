@@ -35,9 +35,538 @@
 		var _Flourish_settings = { "animate_simulation": true, "auto_scale": true, "collision_strength": 5, "directional": true, "fade_opacity": 0.75, "label_color": null, "label_color_mode": "fixed", "label_show": "all", "label_size": 0.6, "layout.background_image_enabled": true, "layout.body_font": { "name": "Roboto Condensed", "url": "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" }, "layout.border.enabled": true, "layout.footer_logo_enabled": true, "layout.header_logo_enabled": false, "layout.layout_order": "stack-default", "layout.margin_bottom": 1, "layout.margin_left": 5, "layout.margin_right": 5, "layout.margin_top": 1, "layout.max_width_target": "none", "layout.screenreader_hide_primary": false, "layout.space_between_sections": "0.5", "layout.title": "RMIT Library systems", "layout.title_styling": true, "legend.orientation": "horizontal", "legend_position": "below", "legend.show_legend": true, "legend.text_weight": "normal", "legend.title_mode": "auto", "legend.title_weight": "normal", "link_highlight_opacity": 0.9, "link_opacity": 0.2, "localization.input_decimal_separator": ".", "many_body_strength": 26, "max_fullness": 17, "max_link_width": 5, "max_node_radius": 35, "min_node_radius": 19, "node_highlight_stroke_color": "#000000", "node_scale_type": "current", "popup.align": "left", "popup.custom_template": "\u003ch3>{{id}}\u003c/h3> \u003chr> {{info}}", "popup.font_size": 16, "popup.is_custom": true, "popup_opacity": 0.95, "popup.show_pointer": true, "popup.show_popups": true, "popup.show_shadow": true, "popup.style_popups": true };
 		_Flourish_unflattenInto(window.template.state, _Flourish_settings);
 
-		var _Flourish_data_column_names = { "links": { "source": "source", "target": "target", "value": "value" }, "nodes": { "group": "group", "id": "id", "image": "Image", "metadata": ["info"], "size": "Size" } },
-			_Flourish_data_metadata = { "links": {}, "nodes": { "metadata": [null] } },
-			_Flourish_data = { "links": [{ "source": "Alma", "target": "Alma", "value": "1" }, { "source": "Alma", "target": "Library Search", "value": "1" }, { "source": "Alma", "target": "SAP", "value": "1" }, { "source": "Alma", "target": "Google Scholar", "value": "1" }, { "source": "Alma", "target": "Alma Analytics", "value": "1" }, { "source": "Alma Course Reserves", "target": "Alma", "value": "1" }, { "source": "Alma Course Reserves", "target": "Reading Lists", "value": "1" }, { "source": "Alma Digital", "target": "Alma", "value": "1" }, { "source": "Alma Resource Sharing", "target": "Alma", "value": "1" }, { "source": "Ask the Library Chat", "target": "Library Search", "value": "1" }, { "source": "Browzine", "target": "Library Search", "value": "1" }, { "source": "Browzine", "target": "Central Discovery Index", "value": "1" }, { "source": "Canvas", "target": "Reading Lists", "value": "1" }, { "source": "Central Discovery Index", "target": "Library Search", "value": "1" }, { "source": "Central Discovery Index", "target": "EzProxy", "value": "1" }, { "source": "Central Discovery Index", "target": "External Databases", "value": "1" }, { "source": "Esploro", "target": "Alma", "value": "1" }, { "source": "Esploro Research Repository", "target": "Alma", "value": "1" }, { "source": "EzProxy", "target": "External Databases", "value": "1" }, { "source": "FigShare", "target": "Research Data Australia", "value": "1" }, { "source": "Alma Resource Sharing", "target": "LADD", "value": "1" }, { "source": "Libraries Australia Trove", "target": "Central Discovery Index", "value": "1" }, { "source": "LibGuides", "target": "Library Search", "value": "1" },{ "source": "LibGuides", "target": "Canvas", "value": "1" },  { "source": "Libraries Australia Trove", "target": "Rosetta", "value": "1" },{ "source": "Libraries Australia Trove", "target": "Alma", "value": "1" }, { "source": "Library Search", "target": "Google Analytics", "value": "1" }, { "source": "Library Search", "target": "Central Discovery Index", "value": "1" }, { "source": "Library website", "target": "Google Analytics", "value": "1" }, { "source": "Library website", "target": "BookIt", "value": "1" }, { "source": "Library website", "target": "", "value": "" }, { "source": "Library website", "target": "Ask the Library Chat", "value": "1" }, { "source": "Library website", "target": "Library Guides", "value": "1" }, { "source": "Library website", "target": "Library Search", "value": "1" }, { "source": "Primo VE", "target": "Alma", "value": "1" }, { "source": "Primo VE", "target": "Library Search", "value": "1" }, { "source": "Primo VE", "target": "Primo Analytics", "value": "1" }, { "source": "REading Lists", "target": "Alma", "value": "1" }, { "source": "Research Data Australia", "target": "Network Log in / Single Sign on", "value": "1" }, { "source": "Rosetta", "target": "Libraries Australia Trove", "value": "1" }, { "source": "Rosetta", "target": "Alma", "value": "1" }, { "source": "SAMS", "target": "Alma", "value": "1" }, { "source": "SAMS", "target": "Self Check Machines", "value": "1" }, { "source": "Network Log in / Single Sign on", "target": "Self Check Machines", "value": "1" }, { "source": "Network Log in / Single Sign on", "target": "Alma", "value": "1" }, { "source": "Library Micro-Credentials", "target": "Canvas", "value": "1" }, { "source": "Canvas", "target": "Library Micro-Credentials", "value": "1" }], "nodes": [{ "group": "ExLibris Product", "id": "Alma", "image": "", "metadata": ["Library Management System  A vendor product by ExLibris Cloud based Used for Cataloguing, Acquisitions, Fulfilment + Includes the below modules"], "size": "60" }, { "group": "ExLibris Product", "id": "Alma Analytics", "image": "", "metadata": ["Uses Oracle database OBIEEE Part of the Alma product Data from Alma is harvested into Analytics every 24hrs"], "size": "9" }, { "group": "ExLibris Product", "id": "Alma Course Reserves", "image": "", "metadata": ["Used for Reading Lists\nLibrary side workflow of\nLeganto"], "size": "5" }, { "group": "ExLibris Product", "id": "Alma Digital", "image": "", "metadata": ["Digital Asset\nManagement system\nAWS (Amazon Web\nService) storage for\ndigital objects"], "size": "4" }, { "group": "ExLibris Product", "id": "Alma Resource Sharing", "image": "", "metadata": ["Used for Document\nDelivery\nUses ISO to interact with\nLADD gateway"], "size": "4" }, { "group": "Other Vendor", "id": "Ask the Library Chat", "image": "", "metadata": ["Library chat widget /\nfunctionality\nVendor system Live Chat."], "size": "3" }, { "group": "Emedia ITS", "id": "Assignment Planner", "image": "", "metadata": ["Online web tool  to support student study"], "size": "5" }, { "group": "Other Vendor", "id": "Vygo", "image": "", "metadata": ["Online web tool used by peer mentoring"], "size": "5" },{ "group": "lib.rmit by RMIT", "id": "Attribution Builder", "image": "", "metadata": ["Online web tool to help build attributions for students"], "size": "5" }, { "group": "Other Vendor", "id": "BookIt", "image": "", "metadata": ["Library room and\ncomputer booking\nsystem\nProvided by vendor\nBookIt"], "size": "5" }, { "group": "Other Vendor", "id": "Browzine", "image": "", "metadata": ["Tool for accessing\njournals/articles\nProvided by vendor\nThirIron\nCode is used to interact\nwith LibrarySearch\nAlso available as an app\nand a browser extension"], "size": "5" }, { "group": "Other Vendor", "id": "Canvas", "image": "", "metadata": ["University Learning Management system University Library systems have very little integration with this Managed by University ITS"], "size": "4" }, { "group": "ExLibris Product", "id": "Central Discovery Index", "image": "", "metadata": ["ExLibris index of (most)\nexternal database\ncontent\nPart of the Primo\nproduct"], "size": "4" }, { "group": "Emedia ITS", "id": "Easy Cite", "image": "", "metadata": ["Online web tool tool to assist  students follow appropriate guidance for referencing"], "size": "5" }, { "group": "Emedia ITS", "id": "emedia", "image": "", "metadata": ["ITS web server cluster to host learning and support materials"], "size": "5" }, { "group": "ExLibris Product", "id": "Esploro Research Repository", "image": "", "metadata": ["Researcher / Research\nmanagement system\ncurrently in\nimplementation\nLibrary and Research\nOffice project"], "size": "5" }, { "group": "Various Vendors", "id": "External Databases", "image": "", "metadata": ["Vendor provided databases\nthat the library subscribes to –\nincludes ProQuest databases,\nEBSCO databases, LinkedIn\nLearning, Standards Australia,\nand many more>"], "size": "3" }, { "group": "Managed by ITS", "id": "EzProxy", "image": "", "metadata": ["Enables RMIT login\nto external resources\nManaged by RMIT\nITS"], "size": "3" }, { "group": "Other Vendor", "id": "FigShare", "image": "", "metadata": ["Library Research data\nstorage and management\nsystem Owned by RMIT ITS"], "size": "9" }, { "group": "Google", "id": "Google Analytics", "image": "", "metadata": ["Includes use of\nGoogle Tag\nManager"], "size": "1" }, { "group": "Google", "id": "Google Scholar", "image": "", "metadata": ["Alma physical holdings\nand research asset\ninformation shared with\nGoogle to enable Link to\nfull text for logged in\nRMIT users"], "size": "7" }, { "group": "Emedia ITS", "id": "Graduate researcher KnowHow", "image": "", "metadata": ["Wordpress website managed by the T&R  supporting research"], "size": "5" }, { "group": "", "id": "LADD", "image": "", "metadata": ["Libraries Australia\nDocument Delivery Gateway\n- Australian inter-library\nloan system supported by\nLibraries Australia"], "size": "5" }, { "group": "Emedia ITS", "id": "Learning Lab", "image": "", "metadata": ["Online web resource to support foundation skills and study support, Runs on Drupal Open Source"], "size": "5" }, { "group": "Other Vendor", "id": "LibGuides", "image": "", "metadata": ["Library Subject Guides"], "size": "5" }, { "group": "RMIT Partnership", "id": "Libraries Australia Trove", "image": "", "metadata": ["RMIT holdings and bib\nrecord metadata shared\nwith LA and discoverable\nin Trove\nIn progress – RMIT\nResearch Repository data\nshared with Trove"], "size": "4" }, { "group": "Other Vendor", "id": "Library LIve", "image": "", "metadata": ["Realtime visualisation of collection items being accessed in the RMIT collection"], "size": "5" }, { "group": "Canvas", "id": "Library Micro-Credentials", "image": "", "metadata": ["Badged learning products delivered through Canvas"], "size": "5" }, { "group": "lib.rmit by RMIT", "id": "Library quest", "image": "", "metadata": ["Web based online game to support orientation and library services"], "size": "5" }, { "group": "ExLibris Product", "id": "Library Search", "image": "", "metadata": ["\u003cLibrary discovery layer\nA vendor product - Primo\nan ExLibris system\nPrimo user interface"], "size": "4" }, { "group": "Other Vendor", "id": "Library website", "image": "", "metadata": ["\u003cLibrary main access\npoint\nContains library news,\nLibrarySerach widget,\nlibrary information,\nservice catalogue, help\npages, etc>"], "size": "7" }, { "group": "Other Vendor", "id": "Network Log in / Single Sign on", "image": "", "metadata": ["RMIT central authentication – SAML\nNAM IDP\nManaged by RMIT ITS - Library systems and some external\ndatabases are integrated with RMIT\nSAML NAM IDP to enable single sign\non (SSO)\nIncludes Library systems Primo, Alma\nIncludes external databases LinkedIn\nLearning, Cambridge ebooks, EBSCO,\nect"], "size": "5" }, { "group": "Other Vendor", "id": "OCLC Wordshare", "image": "", "metadata": ["Used for international inter-library loans>"], "size": "2" }, { "group": "ExLibris Product", "id": "Primo Analytics", "image": "", "metadata": ["Uses Oracle database\nOBIEEE\nPart of the Primo product\nData from Primo is\nharvested into Analytics\nevery 24hrs"], "size": "8" }, { "group": "ExLibris Product", "id": "Primo VE", "image": "", "metadata": ["Library discovery layer A vendor product - Primo is an ExLibris system"], "size": "1" }, { "group": "ExLibris Product", "id": "Reading Lists", "image": "", "metadata": ["Leganto front end\nExLibris system\nStaff and students\nauthenticate into Leganto\nvia Canvas"], "size": "6" }, { "group": "Other Vendor", "id": "Research Data Australia", "image": "", "metadata": ["RMIT deposit research\ndata information into\nResearch data Australia"], "size": "5" }, { "group": "Emedia ITS", "id": "Research Skills for HDR", "image": "", "metadata": ["Wordpress website managed by the T&R  supporting research"], "size": "5" }, { "group": "ExLibris Product", "id": "Rosetta", "image": "", "metadata": ["Digital Preservation system RMIT locally hosted Vendor software provided by ExLibris"], "size": "7" }, { "group": "Managed by ITS", "id": "SAMS", "image": "", "metadata": ["Managed by RMIT\nITS\nLibrary receives\nstudent data feeds"], "size": "5" }, { "group": "Managed by ITS", "id": "SAP", "image": "", "metadata": ["RMIT Finance system Managed by RMIT ITS Library receives staff feeds  Library sends & receives finance invoice information"], "size": "7" }, { "group": "Various Vendors", "id": "Self Check Machines", "image": "", "metadata": ["Sourced from various\nvendors including 3M,\nBibliotecha\nEnables patron\nborrowing self service\nSends item borrowing\ninfo to Alma via ???"], "size": "8" }] };
+		var _Flourish_data_column_names = {
+    "links": {
+        "source": "source",
+        "target": "target",
+        "value": "value"
+    },
+    "nodes": {
+        "group": "group",
+        "id": "id",
+        "image": "Image",
+        "metadata": ["info"],
+        "size": "Size"
+    }
+},
+_Flourish_data_metadata = {
+        "links": {},
+        "nodes": {
+            "metadata": [null]
+        }
+    },
+    _Flourish_data = {
+        "links": [{
+            "source": "Alma",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "Alma",
+            "target": "Library Search",
+            "value": "1"
+        }, {
+            "source": "Alma",
+            "target": "SAP",
+            "value": "1"
+        }, {
+            "source": "Alma",
+            "target": "Google Scholar",
+            "value": "1"
+        }, {
+            "source": "Alma",
+            "target": "Alma Analytics",
+            "value": "1"
+        }, {
+            "source": "Alma Course Reserves",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "Alma Course Reserves",
+            "target": "Reading Lists",
+            "value": "1"
+        }, {
+            "source": "Alma Digital",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "Alma Resource Sharing",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "Ask the Library Chat",
+            "target": "Library Search",
+            "value": "1"
+        }, {
+            "source": "Browzine",
+            "target": "Library Search",
+            "value": "1"
+        }, {
+            "source": "Browzine",
+            "target": "Central Discovery Index",
+            "value": "1"
+        }, {
+            "source": "Canvas",
+            "target": "Reading Lists",
+            "value": "1"
+        }, {
+            "source": "Central Discovery Index",
+            "target": "Library Search",
+            "value": "1"
+        }, {
+            "source": "Central Discovery Index",
+            "target": "EzProxy",
+            "value": "1"
+        }, {
+            "source": "Central Discovery Index",
+            "target": "External Databases",
+            "value": "1"
+        }, {
+            "source": "Esploro",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "Esploro Research Repository",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "EzProxy",
+            "target": "External Databases",
+            "value": "1"
+        }, {
+            "source": "FigShare",
+            "target": "Research Data Australia",
+            "value": "1"
+        }, {
+            "source": "Alma Resource Sharing",
+            "target": "LADD",
+            "value": "1"
+        }, {
+            "source": "Libraries Australia Trove",
+            "target": "Central Discovery Index",
+            "value": "1"
+        }, {
+            "source": "LibGuides",
+            "target": "Library Search",
+            "value": "1"
+        }, {
+            "source": "LibGuides",
+            "target": "Canvas",
+            "value": "1"
+        }, {
+            "source": "Libraries Australia Trove",
+            "target": "Rosetta",
+            "value": "1"
+        }, {
+            "source": "Libraries Australia Trove",
+            "target": "Alma",
+            "value": "1"
+        },
+		{
+            "source": "Graduate Researcher KnowHow",
+            "target": "Google Analytics",
+            "value": "1"
+        },
+		{
+            "source": "Research Skills for HDR",
+            "target": "Google Analytics",
+            "value": "1"
+        },
+		{
+            "source": "Attribution Builder",
+            "target": "Google Analytics",
+            "value": "1"
+        },
+		{
+            "source": "Assignment Planner",
+            "target": "Google Analytics",
+            "value": "1"
+        },
+		{
+            "source": "YouTube",
+            "target": "Google Analytics",
+            "value": "1"
+        },
+		{
+            "source": "Library Quest",
+            "target": "Google Analytics",
+            "value": "1"
+        },
+		{
+            "source": "Learning Lab",
+            "target": "Google Analytics",
+            "value": "1"
+        },
+		{
+            "source": "Easy Cite",
+            "target": "Google Analytics",
+            "value": "1"
+        },{
+            "source": "Library Search",
+            "target": "Google Analytics",
+            "value": "1"
+        }, {
+            "source": "Library Search",
+            "target": "Central Discovery Index",
+            "value": "1"
+        }, {
+            "source": "Library website",
+            "target": "Google Analytics",
+            "value": "1"
+        }, {
+            "source": "Library website",
+            "target": "BookIt",
+            "value": "1"
+        }, {
+            "source": "Library website",
+            "target": "",
+            "value": ""
+        }, {
+            "source": "Library website",
+            "target": "Ask the Library Chat",
+            "value": "1"
+        }, {
+            "source": "Library website",
+            "target": "Library Guides",
+            "value": "1"
+        }, {
+            "source": "Library website",
+            "target": "Library Search",
+            "value": "1"
+        }, {
+            "source": "Primo VE",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "Primo VE",
+            "target": "Library Search",
+            "value": "1"
+        }, {
+            "source": "Primo VE",
+            "target": "Primo Analytics",
+            "value": "1"
+        }, {
+            "source": "REading Lists",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "Research Data Australia",
+            "target": "Network Log in / Single Sign on",
+            "value": "1"
+        }, {
+            "source": "Rosetta",
+            "target": "Libraries Australia Trove",
+            "value": "1"
+        }, {
+            "source": "Rosetta",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "SAMS",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "SAMS",
+            "target": "Self Check Machines",
+            "value": "1"
+        }, 
+		{
+            "source": "Network Log in / Single Sign on",
+            "target": "Microsoft Stream",
+            "value": "1"
+        },
+		{
+            "source": "Network Log in / Single Sign on",
+            "target": "Self Check Machines",
+            "value": "1"
+        }, {
+            "source": "Network Log in / Single Sign on",
+            "target": "Alma",
+            "value": "1"
+        }, {
+            "source": "Library Micro-credentials",
+            "target": "Canvas",
+            "value": "1"
+        }, {
+            "source": "Canvas",
+            "target": "Library Micro-credentials",
+            "value": "1"
+        }],
+        "nodes": [{
+            "group": "ExLibris Product",
+            "id": "Alma",
+            "image": "",
+            "metadata": ["Library Management System  A vendor product by ExLibris Cloud based Used for Cataloguing, Acquisitions, Fulfilment + Includes the below modules"],
+            "size": "60"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Alma Analytics",
+            "image": "",
+            "metadata": ["Uses Oracle database OBIEEE Part of the Alma product Data from Alma is harvested into Analytics every 24hrs"],
+            "size": "9"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Alma Course Reserves",
+            "image": "",
+            "metadata": ["Used for Reading Lists\nLibrary side workflow of\nLeganto"],
+            "size": "5"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Alma Digital",
+            "image": "",
+            "metadata": ["Digital Asset\nManagement system\nAWS (Amazon Web\nService) storage for\ndigital objects"],
+            "size": "4"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Alma Resource Sharing",
+            "image": "",
+            "metadata": ["Used for Document\nDelivery\nUses ISO to interact with\nLADD gateway"],
+            "size": "4"
+        }, {
+            "group": "Other Vendor",
+            "id": "Ask the Library Chat",
+            "image": "",
+            "metadata": ["Library chat widget /\nfunctionality\nVendor system Live Chat."],
+            "size": "3"
+        }, {
+            "group": "Emedia ITS",
+            "id": "Assignment Planner",
+            "image": "",
+            "metadata": ["Online web tool  to support student study"],
+            "size": "5"
+        },{
+            "group": "Other Vendor",
+            "id": "PressBooks",
+            "image": "",
+            "metadata": ["Vendor hosted environment for OER textbooks"],
+            "size": "5"
+        }, 
+		 {
+            "group": "Other Vendor",
+            "id": "Vygo",
+            "image": "",
+            "metadata": ["Online web tool used by peer mentoring"],
+            "size": "5"
+        }, {
+            "group": "lib.rmit by RMIT",
+            "id": "Attribution Builder",
+            "image": "",
+            "metadata": ["Online web tool to help build attributions for students"],
+            "size": "5"
+        }, {
+            "group": "Other Vendor",
+            "id": "BookIt",
+            "image": "",
+            "metadata": ["Library room and\ncomputer booking\nsystem\nProvided by vendor\nBookIt"],
+            "size": "5"
+        }, {
+            "group": "Other Vendor",
+            "id": "Browzine",
+            "image": "",
+            "metadata": ["Tool for accessing\njournals/articles\nProvided by vendor\nThirIron\nCode is used to interact\nwith LibrarySearch\nAlso available as an app\nand a browser extension"],
+            "size": "5"
+        }, {
+            "group": "Other Vendor",
+            "id": "Canvas",
+            "image": "",
+            "metadata": ["University Learning Management system University Library systems have very little integration with this Managed by University ITS"],
+            "size": "4"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Central Discovery Index",
+            "image": "",
+            "metadata": ["ExLibris index of (most)\nexternal database\ncontent\nPart of the Primo\nproduct"],
+            "size": "4"
+        }, {
+            "group": "Emedia ITS",
+            "id": "Easy Cite",
+            "image": "",
+            "metadata": ["Online web tool tool to assist  students follow appropriate guidance for referencing"],
+            "size": "5"
+        }, {
+            "group": "Emedia ITS",
+            "id": "emedia",
+            "image": "",
+            "metadata": ["ITS web server cluster to host learning and support materials"],
+            "size": "5"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Esploro Research Repository",
+            "image": "",
+            "metadata": ["Researcher / Research\nmanagement system\ncurrently in\nimplementation\nLibrary and Research\nOffice project"],
+            "size": "5"
+        }, {
+            "group": "Various Vendors",
+            "id": "External Databases",
+            "image": "",
+            "metadata": ["Vendor provided databases\nthat the library subscribes to –\nincludes ProQuest databases,\nEBSCO databases, LinkedIn\nLearning, Standards Australia,\nand many more>"],
+            "size": "3"
+        }, {
+            "group": "Managed by ITS",
+            "id": "EzProxy",
+            "image": "",
+            "metadata": ["Enables RMIT login\nto external resources\nManaged by RMIT\nITS"],
+            "size": "3"
+        }, {
+            "group": "Other Vendor",
+            "id": "FigShare",
+            "image": "",
+            "metadata": ["Library Research data\nstorage and management\nsystem Owned by RMIT ITS"],
+            "size": "9"
+        }, {
+            "group": "Google",
+            "id": "Google Analytics",
+            "image": "",
+            "metadata": ["Includes use of\nGoogle Tag\nManager, engagement recorded on the Library Intranet"],
+            "size": "1"
+        }, 
+        {
+            "group": "Microsoft",
+            "id": "Microsoft Stream",
+            "image": "",
+            "metadata": ["Host of video content behind Single Sign On - SSO"],
+            "size": "1"
+        }, 
+        {
+            "group": "Google",
+            "id": "Google Scholar",
+            "image": "",
+            "metadata": ["Alma physical holdings\nand research asset\ninformation shared with\nGoogle to enable Link to\nfull text for logged in\nRMIT users"],
+            "size": "7"
+        }, {
+            "group": "Emedia ITS",
+            "id": "Graduate Researcher KnowHow",
+            "image": "",
+            "metadata": ["Wordpress website managed by the T&R  supporting research"],
+            "size": "5"
+        }, {
+            "group": "",
+            "id": "LADD",
+            "image": "",
+            "metadata": ["Libraries Australia\nDocument Delivery Gateway\n- Australian inter-library\nloan system supported by\nLibraries Australia"],
+            "size": "5"
+        }, {
+            "group": "Emedia ITS",
+            "id": "Learning Lab",
+            "image": "",
+            "metadata": ["Online web resource to support foundation skills and study support, Runs on Drupal Open Source"],
+            "size": "5"
+        }, {
+            "group": "Other Vendor",
+            "id": "LibGuides",
+            "image": "",
+            "metadata": ["Library Subject Guides"],
+            "size": "5"
+        }, {
+            "group": "RMIT Partnership",
+            "id": "Libraries Australia Trove",
+            "image": "",
+            "metadata": ["RMIT holdings and bib\nrecord metadata shared\nwith LA and discoverable\nin Trove\nIn progress – RMIT\nResearch Repository data\nshared with Trove"],
+            "size": "4"
+        }, {
+            "group": "Other Vendor",
+            "id": "Library LIve",
+            "image": "",
+            "metadata": ["Realtime visualisation of collection items being accessed in the RMIT collection"],
+            "size": "5"
+        }, {
+            "group": "Canvas",
+            "id": "Library Micro-credentials",
+            "image": "",
+            "metadata": ["Badged learning products delivered through Canvas"],
+            "size": "5"
+        }, {
+            "group": "lib.rmit by RMIT",
+            "id": "Library Quest",
+            "image": "",
+            "metadata": ["Web based online game to support orientation and library services"],
+            "size": "5"
+        },{
+            "group": "Google",
+            "id": "YouTube",
+            "image": "",
+            "metadata": ["Host of promotional and instructional videos on the open web"],
+            "size": "5"
+        },
+		 {
+            "group": "ExLibris Product",
+            "id": "Library Search",
+            "image": "",
+            "metadata": ["\u003cLibrary discovery layer\nA vendor product - Primo\nan ExLibris system\nPrimo user interface"],
+            "size": "4"
+        }, {
+            "group": "Other Vendor",
+            "id": "Library website",
+            "image": "",
+            "metadata": ["\u003cLibrary main access\npoint\nContains library news,\nLibrarySerach widget,\nlibrary information,\nservice catalogue, help\npages, etc>"],
+            "size": "7"
+        }, {
+            "group": "Other Vendor",
+            "id": "Network Log in / Single Sign on",
+            "image": "",
+            "metadata": ["RMIT central authentication – SAML\nNAM IDP\nManaged by RMIT ITS - Library systems and some external\ndatabases are integrated with RMIT\nSAML NAM IDP to enable single sign\non (SSO)\nIncludes Library systems Primo, Alma\nIncludes external databases LinkedIn\nLearning, Cambridge ebooks, EBSCO,\nect"],
+            "size": "5"
+        }, {
+            "group": "Other Vendor",
+            "id": "OCLC Wordshare",
+            "image": "",
+            "metadata": ["Used for international inter-library loans>"],
+            "size": "2"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Primo Analytics",
+            "image": "",
+            "metadata": ["Uses Oracle database\nOBIEEE\nPart of the Primo product\nData from Primo is\nharvested into Analytics\nevery 24hrs"],
+            "size": "8"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Primo VE",
+            "image": "",
+            "metadata": ["Library discovery layer A vendor product - Primo is an ExLibris system"],
+            "size": "1"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Reading Lists",
+            "image": "",
+            "metadata": ["Leganto front end\nExLibris system\nStaff and students\nauthenticate into Leganto\nvia Canvas"],
+            "size": "6"
+        }, {
+            "group": "Other Vendor",
+            "id": "Research Data Australia",
+            "image": "",
+            "metadata": ["RMIT deposit research\ndata information into\nResearch data Australia"],
+            "size": "5"
+        }, {
+            "group": "Emedia ITS",
+            "id": "Research Skills for HDR",
+            "image": "",
+            "metadata": ["Wordpress website managed by the T&R  supporting research"],
+            "size": "5"
+        }, {
+            "group": "ExLibris Product",
+            "id": "Rosetta",
+            "image": "",
+            "metadata": ["Digital Preservation system RMIT locally hosted Vendor software provided by ExLibris"],
+            "size": "7"
+        }, {
+            "group": "Managed by ITS",
+            "id": "SAMS",
+            "image": "",
+            "metadata": ["Managed by RMIT\nITS\nLibrary receives\nstudent data feeds"],
+            "size": "5"
+        }, {
+            "group": "Managed by ITS",
+            "id": "SAP",
+            "image": "",
+            "metadata": ["RMIT Finance system Managed by RMIT ITS Library receives staff feeds  Library sends & receives finance invoice information"],
+            "size": "7"
+        }, {
+            "group": "Various Vendors",
+            "id": "Self Check Machines",
+            "image": "",
+            "metadata": ["Sourced from various\nvendors including 3M,\nBibliotecha\nEnables patron\nborrowing self service\nSends item borrowing\ninfo to Alma via ???"],
+            "size": "8"
+        }]
+    };
 		for (var _Flourish_dataset in _Flourish_data) {
 			window.template.data[_Flourish_dataset] = _Flourish_data[_Flourish_dataset];
 			window.template.data[_Flourish_dataset].column_names = _Flourish_data_column_names[_Flourish_dataset];
@@ -45,7 +574,7 @@
 		}
 		window.template.draw();
 	</script>
-	<p class="caption">v1, 2021. Needs updating? <a href="mailto:Jack.dunstan@rmit.edu.au?subject=The%20Library%20Systems%20Map%20needs%20updating&body=Hi%20Jack%2C%0D%0A%0D%0A%0D%0A%0D%0A">Email The Digital Learning Team</a>, Library </p>
+	<p class="caption">v2, 2022. Needs updating? <a href="mailto:DigitalLearning4251@rmiteduau.onmicrosoft.com?subject=The%20Library%20Systems%20Map%20needs%20updating&body=Hi%20Jack%2C%0D%0A%0D%0A%0D%0A%0D%0A">Email The Digital Learning Team</a>, Library </p>
 </body>
 
 </html>
