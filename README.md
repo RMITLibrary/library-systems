@@ -5,7 +5,7 @@ This project contains a visual representation of RMIT University Library systems
 ## Purpose
 
 - Offer a visual depiction of library systems to aid understanding and communication.
-- Version information: Last updated in 2022. Archived on 22 January 2025.
+- Version information: Last updated in 2022. The project remains active as further updates are anticipated.
 
 ## Features
 
@@ -31,7 +31,7 @@ No configuration steps are required.
 - **Development**: Local environment (open in browser)
 - **Testing**: N/A
 - **Staging**: N/A
-- **Production**: Archived
+- **Production**: Local use
 
 ## Testing and Deployment
 
@@ -40,11 +40,12 @@ No configuration steps are required.
 
 ## Contribution
 
-This repository is archived and not open for contributions.
+The project is currently active. Please coordinate with the Repo Admin for contributions.
 
 ## Authors and Acknowledgments
 
 - Repo Owner: Jack Dunston
+- Contributor: Mike Brooks
 
 ## License
 
@@ -56,7 +57,8 @@ Licensed under RMIT Library agreements.
 
 ## Contact
 
-- Repo Admin: Jack Dunston
+- Repo Admin: Jack Dunston ([jack.dunstan@rmit.edu.au](mailto:jack.dunstan@rmit.edu.au))
+- Contributor: Mike Brooks ([mike.brooks@rmit.edu.au](mailto:mike.brooks@rmit.edu.au))
 - Additional Contact: [digital.learning.library@rmit.edu.au](mailto:digital.learning.library@rmit.edu.au)
 
 ## Resources
